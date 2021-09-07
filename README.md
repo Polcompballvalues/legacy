@@ -1,2 +1,2 @@
-# legacy
-Legacy version of polcompballvalues
+# polcompballvalues.github.io
+PolcompballValues is a quiz aimed at members of the Polcompball community, in particular the discord server, that attempts to assign percentages for twenty-two different values.
