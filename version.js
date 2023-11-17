@@ -1,1 +1,1 @@
-version = "V1 Beta 2.1 (EoL)"
+const version = "V1 Beta 2.1 (EoL)"

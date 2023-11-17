@@ -24,28 +24,28 @@ p {
     margin: 4pt;
 }
 
-    p.value-description {
-        text-indent: -16pt;
-        margin-left: 20pt;
-    }
+p.value-description {
+    text-indent: -16pt;
+    margin-left: 20pt;
+}
 
-    p.question {
-        margin: 16pt auto;
-        color: #333333;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: normal;
-        width: 70%;
-        min-width: 500pt;
-        min-height: 144pt;
-        background-color: #eeeeee;
-        padding: 16pt;
-        border-radius: 16pt;
-        font-size: 36pt;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+p.question {
+    margin: 16pt auto;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    width: 70%;
+    min-width: 500pt;
+    min-height: 144pt;
+    background-color: #eeeeee;
+    padding: 16pt;
+    border-radius: 16pt;
+    font-size: 36pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 h1 {
     color: #222222;
@@ -67,7 +67,7 @@ h2 {
 }
 
 li {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16pt;
     text-indent: 16pt;
 }
@@ -75,7 +75,9 @@ li {
 a {
     font-family: inherit;
 }
-.small_button, .small_button_off {
+
+.small_button,
+.small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;
     border: none;
@@ -99,6 +101,37 @@ a {
     cursor: not-allowed;
     margin: -4px auto;
 }
+
+div#heads-up {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: fit-content;
+    max-width: 50%;
+    text-align: justify;
+    justify-content: center;
+    background-color: #CCC;
+    margin: auto;
+    padding: 18px 24px;
+    border-radius: 16px;
+}
+
+div#heads-up .inner {
+    max-width: 75%;
+    margin: auto;
+}
+
+div#close {
+    display: block;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: 0;
+    width: fit-content;
+}
+
+div#close:hover {
+    color: red;
+}
+
 /*General CSS*/
 
 a {
@@ -167,6 +200,7 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
+
 div.text-wrapper-white {
     font-family: 'Montserrat', sans-serif;
     font-size: 36pt;
@@ -321,194 +355,213 @@ div.misbehaving {
 span.weight-300 {
     font-weight: 300;
 }
+
 /*Light Mode*/
-@media(prefers-color-scheme: light){
-html {
-    background-color: #bbbbbb;
-    padding: 0px;
-}
-body {
-    width: 80%;
-    min-height: calc(100vh - 4em);
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #dddddd;
-    border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
-}
-p {
-    color: #444444;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1;
-    margin: 4pt;
-}
-p.value-description {
-    text-indent: -16pt;
-    margin-left: 20pt;
-}
-p.question {
-    margin: 16pt auto;
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    width: 70%;
-    min-width: 500pt;
-    min-height: 144pt;
-    background-color: #eeeeee;
-    padding: 16pt;
-    border-radius: 16pt;
-    font-size: 36pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media(prefers-color-scheme: light) {
+    html {
+        background-color: #bbbbbb;
+        padding: 0px;
+    }
 
-}
-h1 {
-    color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
-    text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-}
-h2 {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
-}
-li {
-    color: #333333;
-    font-size: 16pt;
-    text-indent: 16pt;
-}
-a {
-    font-family: inherit;
-}
-.small_button, .small_button_off {
-    background-color: #333;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 10%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
+    body {
+        width: 80%;
+        min-height: calc(100vh - 4em);
+        margin: 0 auto;
+        padding: 2em;
+        background-color: #dddddd;
+        border-color: #eeeeee;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-width: 20px;
+    }
+
+    p {
+        color: #444444;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16pt;
+        line-height: 1;
+        margin: 4pt;
+    }
+
+    p.value-description {
+        text-indent: -16pt;
+        margin-left: 20pt;
+    }
+
+    p.question {
+        margin: 16pt auto;
+        color: #333333;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        width: 70%;
+        min-width: 500pt;
+        min-height: 144pt;
+        background-color: #eeeeee;
+        padding: 16pt;
+        border-radius: 16pt;
+        font-size: 36pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    h1 {
+        color: #222222;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 72pt;
+        text-align: center;
+        line-height: 72pt;
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+    }
+
+    h2 {
+        color: #333333;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36pt;
+        line-height: 36pt;
+        margin-top: 12pt;
+        margin-bottom: 0pt;
+    }
+
+    li {
+        color: #333333;
+        font-size: 16pt;
+        text-indent: 16pt;
+    }
+
+    a {
+        font-family: inherit;
+    }
+
+    .small_button,
+    .small_button_off {
+        background-color: #333;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        border-radius: 8pt;
+        color: white;
+        padding: 8pt;
+        width: 10%;
+        min-width: 100pt;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 18pt;
+        margin: -2px auto;
+        cursor: pointer;
+    }
+
+    .small_button_off {
+        background-color: #ddd;
+        color: #888;
+        border: 2px solid #888;
+        cursor: not-allowed;
+        margin: -4px auto;
+    }
 }
 
-.small_button_off {
-    background-color: #ddd;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
-}
-}
 /*Dark Mode*/
-@media(prefers-color-scheme: dark){
-html {
-    background-color: #000000;
-    padding: 0px;
-}
-body {
-    width: 80%;
-    min-height: calc(100vh - 4em);
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #3b3b3b;
-    border-color: 505050;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
-}
-p {
-    color: #cccccc;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1;
-    margin: 4pt;
-}
-p.value-description {
-    text-indent: -16pt;
-    margin-left: 20pt;
-}
-p.question {
-    margin: 16pt auto;
-    color: #cccccc;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    width: 70%;
-    min-width: 500pt;
-    min-height: 144pt;
-    background-color: #000000;
-    padding: 16pt;
-    border-radius: 16pt;
-    font-size: 36pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media(prefers-color-scheme: dark) {
+    html {
+        background-color: #000000;
+        padding: 0px;
+    }
 
-}
-h1 {
-    color: #cccccc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 72pt;
-    text-align: center;
-    line-height: 72pt;
-    margin-top: 0pt;
-    margin-bottom: 0pt;
-}
-h2 {
-    color: #cccccc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
-}
+    body {
+        width: 80%;
+        min-height: calc(100vh - 4em);
+        margin: 0 auto;
+        padding: 2em;
+        background-color: #3b3b3b;
+        border-color: #505050;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-width: 20px;
+    }
 
-li {
-    color: #cccccc;
-    font-size: 16pt;
-    text-indent: 16pt;
-}
+    p {
+        color: #cccccc;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16pt;
+        line-height: 1;
+        margin: 4pt;
+    }
 
-.small_button, .small_button_off {
-    background-color: #ddd;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 10%;
-    min-width: 100pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 18pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
+    p.value-description {
+        text-indent: -16pt;
+        margin-left: 20pt;
+    }
 
-.small_button_off {
-    background-color: #333;
-    color: #888;
-    border: 2px solid #888;
-    cursor: not-allowed;
-    margin: -4px auto;
-}
+    p.question {
+        margin: 16pt auto;
+        color: #cccccc;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        width: 70%;
+        min-width: 500pt;
+        min-height: 144pt;
+        background-color: #000000;
+        padding: 16pt;
+        border-radius: 16pt;
+        font-size: 36pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    h1 {
+        color: #cccccc;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 72pt;
+        text-align: center;
+        line-height: 72pt;
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+    }
+
+    h2 {
+        color: #cccccc;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36pt;
+        line-height: 36pt;
+        margin-top: 12pt;
+        margin-bottom: 0pt;
+    }
+
+    li {
+        color: #cccccc;
+        font-size: 16pt;
+        text-indent: 16pt;
+    }
+
+    .small_button,
+    .small_button_off {
+        background-color: #ddd;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        border-radius: 8pt;
+        color: white;
+        padding: 8pt;
+        width: 10%;
+        min-width: 100pt;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 18pt;
+        margin: -2px auto;
+        cursor: pointer;
+    }
+
+    .small_button_off {
+        background-color: #333;
+        color: #888;
+        border: 2px solid #888;
+        cursor: not-allowed;
+        margin: -4px auto;
+    }
 }
